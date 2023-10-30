@@ -34,12 +34,13 @@ namespace form.crud
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
-            this.txtNome = new System.Windows.Forms.TextBox();
-            this.txtRG = new System.Windows.Forms.TextBox();
-            this.txtEndereco = new System.Windows.Forms.TextBox();
-            this.txtTelefone = new System.Windows.Forms.TextBox();
-            this.btnRegistros = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.textBox5 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label1
@@ -56,7 +57,7 @@ namespace form.crud
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(241, 103);
+            this.label2.Location = new System.Drawing.Point(248, 63);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(58, 22);
             this.label2.TabIndex = 1;
@@ -66,7 +67,7 @@ namespace form.crud
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(241, 149);
+            this.label3.Location = new System.Drawing.Point(248, 109);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(39, 22);
             this.label3.TabIndex = 2;
@@ -76,81 +77,88 @@ namespace form.crud
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(241, 195);
+            this.label4.Location = new System.Drawing.Point(248, 155);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(88, 22);
+            this.label4.Size = new System.Drawing.Size(59, 22);
             this.label4.TabIndex = 3;
-            this.label4.Text = "Endereço";
+            this.label4.Text = "label4";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(241, 241);
+            this.label5.Location = new System.Drawing.Point(248, 201);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(79, 22);
+            this.label5.Size = new System.Drawing.Size(59, 22);
             this.label5.TabIndex = 4;
-            this.label5.Text = "Telefone";
+            this.label5.Text = "label5";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(248, 251);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(59, 22);
+            this.label6.TabIndex = 5;
+            this.label6.Text = "label6";
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(284, 301);
+            this.button1.Location = new System.Drawing.Point(274, 298);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(174, 49);
+            this.button1.Size = new System.Drawing.Size(166, 40);
             this.button1.TabIndex = 6;
-            this.button1.Text = "Cadastrar";
+            this.button1.Text = "button1";
             this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // txtNome
+            // textBox1
             // 
-            this.txtNome.Location = new System.Drawing.Point(358, 105);
-            this.txtNome.Name = "txtNome";
-            this.txtNome.Size = new System.Drawing.Size(146, 20);
-            this.txtNome.TabIndex = 7;
+            this.textBox1.Location = new System.Drawing.Point(342, 65);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(146, 20);
+            this.textBox1.TabIndex = 7;
             // 
-            // txtRG
+            // textBox2
             // 
-            this.txtRG.Location = new System.Drawing.Point(358, 151);
-            this.txtRG.Name = "txtRG";
-            this.txtRG.Size = new System.Drawing.Size(146, 20);
-            this.txtRG.TabIndex = 8;
+            this.textBox2.Location = new System.Drawing.Point(342, 111);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(146, 20);
+            this.textBox2.TabIndex = 8;
             // 
-            // txtEndereco
+            // textBox3
             // 
-            this.txtEndereco.Location = new System.Drawing.Point(358, 197);
-            this.txtEndereco.Name = "txtEndereco";
-            this.txtEndereco.Size = new System.Drawing.Size(146, 20);
-            this.txtEndereco.TabIndex = 9;
+            this.textBox3.Location = new System.Drawing.Point(342, 157);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(146, 20);
+            this.textBox3.TabIndex = 9;
             // 
-            // txtTelefone
+            // textBox4
             // 
-            this.txtTelefone.Location = new System.Drawing.Point(358, 243);
-            this.txtTelefone.Name = "txtTelefone";
-            this.txtTelefone.Size = new System.Drawing.Size(146, 20);
-            this.txtTelefone.TabIndex = 10;
+            this.textBox4.Location = new System.Drawing.Point(342, 203);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(146, 20);
+            this.textBox4.TabIndex = 10;
             // 
-            // btnRegistros
+            // textBox5
             // 
-            this.btnRegistros.Location = new System.Drawing.Point(284, 370);
-            this.btnRegistros.Name = "btnRegistros";
-            this.btnRegistros.Size = new System.Drawing.Size(174, 49);
-            this.btnRegistros.TabIndex = 11;
-            this.btnRegistros.Text = "Registros";
-            this.btnRegistros.UseVisualStyleBackColor = true;
-            this.btnRegistros.Click += new System.EventHandler(this.btnRegistros_Click);
+            this.textBox5.Location = new System.Drawing.Point(342, 253);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(146, 20);
+            this.textBox5.TabIndex = 11;
             // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.btnRegistros);
-            this.Controls.Add(this.txtTelefone);
-            this.Controls.Add(this.txtEndereco);
-            this.Controls.Add(this.txtRG);
-            this.Controls.Add(this.txtNome);
+            this.Controls.Add(this.textBox5);
+            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.button1);
+            this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -158,7 +166,6 @@ namespace form.crud
             this.Controls.Add(this.label1);
             this.Name = "Form2";
             this.Text = "Form2";
-            this.Load += new System.EventHandler(this.Form2_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -171,11 +178,12 @@ namespace form.crud
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox txtNome;
-        private System.Windows.Forms.TextBox txtRG;
-        private System.Windows.Forms.TextBox txtEndereco;
-        private System.Windows.Forms.TextBox txtTelefone;
-        private System.Windows.Forms.Button btnRegistros;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox textBox5;
     }
 }
