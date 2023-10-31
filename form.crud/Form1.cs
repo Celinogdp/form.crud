@@ -70,7 +70,7 @@ namespace form.crud
         {
             Form2 form2 = new Form2();
             form2.Show();
-            this.Visible = false;
+            this.Close();
 
         }
     }

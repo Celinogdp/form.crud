@@ -41,8 +41,7 @@ namespace form.crud
         {
             Form1 form1 = new Form1();
             form1.Show();
-
-            this.Visible = false;
+            this.Close();
         }
     }
 }
