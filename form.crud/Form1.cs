@@ -73,5 +73,27 @@ namespace form.crud
             this.Close();
 
         }
+
+        private void btnExcluir_Click(object sender, EventArgs e)
+        {
+            DialogResult caixaMensagem = MessageBox.Show("Deseja realmente exluir esse aluno?", "Etec Taboão da Serra", MessageBoxButtons.YesNo);
+
+            if (caixaMensagem == DialogResult.Yes)
+            {
+                string conexao = "server=localhost;database=bd_update_1;uid=root;pwd=etec";
+                MySqlConnection conexaoMYSQL = new MySqlConnection(conexao);
+                conexaoMYSQL.Open();
+                MySqlCommand comando = new MySqlCommand("delete from usuario where id=" + txtID.Text + ";", conexaoMYSQL);
+                comando.ExecuteNonQuery();
+                MessageBox.Show("Dado excluído com sucesso!");
+                txtID.Text = "";
+                txtNome.Text = "";
+                txtRG.Text = "";
+                txtEndereco.Text = "";
+                txtTelefone.Text = "";
+                pnlAlterar.Visible = false;
+                CarregarDadosBanco();
+            }
+        }
     }
 }

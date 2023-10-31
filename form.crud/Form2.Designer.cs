@@ -34,7 +34,7 @@ namespace form.crud
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btn_Cadastrar = new System.Windows.Forms.Button();
             this.txtNome = new System.Windows.Forms.TextBox();
             this.txtRG = new System.Windows.Forms.TextBox();
             this.txtEndereco = new System.Windows.Forms.TextBox();
@@ -92,15 +92,15 @@ namespace form.crud
             this.label5.TabIndex = 4;
             this.label5.Text = "Telefone";
             // 
-            // button1
+            // btn_Cadastrar
             // 
-            this.button1.Location = new System.Drawing.Point(284, 301);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(174, 49);
-            this.button1.TabIndex = 6;
-            this.button1.Text = "Cadastrar";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btn_Cadastrar.Location = new System.Drawing.Point(284, 301);
+            this.btn_Cadastrar.Name = "btn_Cadastrar";
+            this.btn_Cadastrar.Size = new System.Drawing.Size(174, 49);
+            this.btn_Cadastrar.TabIndex = 6;
+            this.btn_Cadastrar.Text = "Cadastrar";
+            this.btn_Cadastrar.UseVisualStyleBackColor = true;
+            this.btn_Cadastrar.Click += new System.EventHandler(this.button1_Click);
             // 
             // txtNome
             // 
@@ -150,7 +150,7 @@ namespace form.crud
             this.Controls.Add(this.txtEndereco);
             this.Controls.Add(this.txtRG);
             this.Controls.Add(this.txtNome);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btn_Cadastrar);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -171,7 +171,7 @@ namespace form.crud
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btn_Cadastrar;
         private System.Windows.Forms.TextBox txtNome;
         private System.Windows.Forms.TextBox txtRG;
         private System.Windows.Forms.TextBox txtEndereco;

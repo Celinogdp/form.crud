@@ -44,6 +44,7 @@ namespace form.crud
             this.label1 = new System.Windows.Forms.Label();
             this.pnlAlterar = new System.Windows.Forms.Panel();
             this.txtTelefone = new System.Windows.Forms.TextBox();
+            this.btnExcluir = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvAluno)).BeginInit();
             this.pnlAlterar.SuspendLayout();
             this.SuspendLayout();
@@ -60,9 +61,9 @@ namespace form.crud
             // 
             // btnAlterar
             // 
-            this.btnAlterar.Location = new System.Drawing.Point(410, 107);
+            this.btnAlterar.Location = new System.Drawing.Point(373, 107);
             this.btnAlterar.Name = "btnAlterar";
-            this.btnAlterar.Size = new System.Drawing.Size(108, 57);
+            this.btnAlterar.Size = new System.Drawing.Size(99, 57);
             this.btnAlterar.TabIndex = 1;
             this.btnAlterar.Text = "Alterar";
             this.btnAlterar.UseVisualStyleBackColor = true;
@@ -172,6 +173,7 @@ namespace form.crud
             // pnlAlterar
             // 
             this.pnlAlterar.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.pnlAlterar.Controls.Add(this.btnExcluir);
             this.pnlAlterar.Controls.Add(this.txtTelefone);
             this.pnlAlterar.Controls.Add(this.txtID);
             this.pnlAlterar.Controls.Add(this.btnAlterar);
@@ -196,6 +198,16 @@ namespace form.crud
             this.txtTelefone.Name = "txtTelefone";
             this.txtTelefone.Size = new System.Drawing.Size(100, 20);
             this.txtTelefone.TabIndex = 11;
+            // 
+            // btnExcluir
+            // 
+            this.btnExcluir.Location = new System.Drawing.Point(478, 107);
+            this.btnExcluir.Name = "btnExcluir";
+            this.btnExcluir.Size = new System.Drawing.Size(99, 57);
+            this.btnExcluir.TabIndex = 12;
+            this.btnExcluir.Text = "Excluir Dados";
+            this.btnExcluir.UseVisualStyleBackColor = true;
+            this.btnExcluir.Click += new System.EventHandler(this.btnExcluir_Click);
             // 
             // Form1
             // 
@@ -234,6 +246,7 @@ namespace form.crud
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel pnlAlterar;
         private System.Windows.Forms.TextBox txtTelefone;
+        private System.Windows.Forms.Button btnExcluir;
     }
 }
 
