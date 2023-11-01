@@ -25,16 +25,25 @@ namespace form.crud
 
         private void button1_Click(object sender, EventArgs e)
         {
-            MySqlConnection mySql = new MySqlConnection("server=Localhost;database=bd_update_1;uid=root;pwd=etec");
-            mySql.Open();
-            MySqlCommand comando = new MySqlCommand("INSERT INTO usuario (nome, RG, endereco, telefone) values ('"+ txtNome.Text + "','"+ txtRG.Text + "','"+ txtEndereco.Text +"','"+ txtTelefone.Text +"');", mySql);
-            comando.ExecuteNonQuery();
 
-            MessageBox.Show("Aluno registrado com sucesso!!");
-            txtNome.Text = "";
-            txtRG.Text = "";
-            txtEndereco.Text = "";
-            txtTelefone.Text = "";
+            if (txtNome.Text == "" || txtRG.Text == "" || txtEndereco.Text == "" || txtTelefone.Text == "")
+            {
+
+                MessageBox.Show("Por favor complete todos os campos");
+
+            }
+            else {
+                MySqlConnection mySql = new MySqlConnection("server=Localhost;database=bd_update_1;uid=root;pwd=etec");
+                mySql.Open();
+                MySqlCommand comando = new MySqlCommand("INSERT INTO usuario (nome, RG, endereco, telefone) values ('" + txtNome.Text + "','" + txtRG.Text + "','" + txtEndereco.Text + "','" + txtTelefone.Text + "');", mySql);
+                comando.ExecuteNonQuery();
+
+                MessageBox.Show("Aluno registrado com sucesso!!");
+                txtNome.Text = "";
+                txtRG.Text = "";
+                txtEndereco.Text = "";
+                txtTelefone.Text = "";
+            }
         }
 
         private void btnRegistros_Click(object sender, EventArgs e)

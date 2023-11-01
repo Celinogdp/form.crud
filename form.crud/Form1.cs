@@ -49,6 +49,7 @@ namespace form.crud
             txtTelefone.Text = "";
             pnlAlterar.Visible = false;
             CarregarDadosBanco();
+
         }
 
         private void dgvAluno_CellMouseDoubleClick(object sender, DataGridViewCellMouseEventArgs e)
