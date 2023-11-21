@@ -18,21 +18,14 @@ namespace form.crud
             InitializeComponent();
         }
 
-        private void Form2_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void button1_Click(object sender, EventArgs e)
         {
-
             if (txtNome.Text == "" || txtRG.Text == "" || txtEndereco.Text == "" || txtTelefone.Text == "")
             {
-
                 MessageBox.Show("Por favor complete todos os campos");
-
             }
-            else {
+            else
+            {
                 MySqlConnection mySql = new MySqlConnection("server=Localhost;database=bd_update_1;uid=root;pwd=etec");
                 mySql.Open();
                 MySqlCommand comando = new MySqlCommand("INSERT INTO usuario (nome, RG, endereco, telefone) values ('" + txtNome.Text + "','" + txtRG.Text + "','" + txtEndereco.Text + "','" + txtTelefone.Text + "');", mySql);
@@ -51,23 +44,6 @@ namespace form.crud
             Form1 form1 = new Form1();
             form1.Show();
             this.Close();
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-        }
-
-        private void checkBox1_CheckedChanged(object sender, EventArgs e)
-        {
-        }
-
-        private void checkBox1_CheckStateChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void checkBox2_CheckedChanged(object sender, EventArgs e)
-        {
         }
     }
 }
