@@ -190,7 +190,6 @@ namespace form.crud
             this.pnlAlterar.Size = new System.Drawing.Size(585, 171);
             this.pnlAlterar.TabIndex = 14;
             this.pnlAlterar.Visible = false;
-            this.pnlAlterar.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlAlterar_Paint);
             // 
             // txtTelefone
             // 
